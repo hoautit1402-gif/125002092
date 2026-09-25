@@ -1,0 +1,304 @@
+<!doctype html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trang Quán Cà Phê / Nhà Hàng - Đề Số 2</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <!-- Khối 1: Header + Menu -->
+    <header class="header">
+      <div class="logo">
+        <h2>Coffee & Bistro</h2>
+      </div>
+      <nav class="navbar">
+        <ul>
+          <li><a href="#trang-chu">Trang chủ</a></li>
+          <li><a href="#thuc-don">Thực đơn</a></li>
+          <li><a href="#khong-gian">Không gian</a></li>
+          <li><a href="#khuyen-mai">Khuyến mãi</a></li>
+          <li><a href="#dat-ban">Đặt bàn</a></li>
+        </ul>
+      </nav>
+      <!-- Nút chuyển DarkMode / LightMode -->
+      <div class="theme-toggle">
+        <button id="toggle-btn" type="button" onclick="toggleDarkMode()">
+          DarkMode / LightMode
+        </button>
+      </div>
+    </header>
+
+    <!-- Khối 2: Banner -->
+    <section id="trang-chu" class="banner">
+      <div class="banner-img-wrap">
+        <!-- Thêm thẻ img có alt đầy đủ để tuân thủ lưu ý bài thi -->
+        <img
+          src="https://images.unsplash.com/photo-1554118811-1e0d58224f24?w=1200"
+          alt="Không gian quán cà phê ấm cúng"
+          class="banner-img"
+        />
+      </div>
+      <div class="banner-content">
+        <h1>The Coffee House & Bistro</h1>
+        <p class="slogan">
+          Hương vị tinh tế - Không gian ấm cúng - Kỷ niệm khó quên
+        </p>
+        <a href="#dat-ban" class="btn-primary">Đặt bàn ngay</a>
+      </div>
+    </section>
+
+    <!-- Khối 3: Danh sách nội dung (6 món thực đơn) -->
+    <section id="thuc-don" class="container">
+      <h2 class="section-title">Thực Đơn Nổi Bật</h2>
+      <div class="menu-grid">
+        <!-- Món 1 -->
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?w=500"
+            alt="Cà phê Espresso đậm vị"
+            class="menu-img"
+          />
+          <div class="menu-info">
+            <h3>Espresso đậm vị</h3>
+            <span class="price">45.000 VNĐ</span>
+            <p class="description">
+              Cà phê Espresso đậm đà chiết xuất từ hạt Robusta thượng hạng.
+            </p>
+          </div>
+        </div>
+        <!-- Món 2 -->
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1534778101976-62847782c213?w=500"
+            alt="Cà phê Cappuccino Ý"
+            class="menu-img"
+          />
+          <div class="menu-info">
+            <h3>Cappuccino Ý</h3>
+            <span class="price">55.000 VNĐ</span>
+            <p class="description">
+              Hương vị hài hòa giữa Espresso, sữa nóng và bọt sữa mịn.
+            </p>
+          </div>
+        </div>
+        <!-- Món 3 -->
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1517256064527-09c73fc73e38?w=500"
+            alt="Trà Đào Cam Sả thanh mát"
+            class="menu-img"
+          />
+          <div class="menu-info">
+            <h3>Trà Đào Cam Sả</h3>
+            <span class="price">50.000 VNĐ</span>
+            <p class="description">
+              Trà thanh mát kết hợp miếng đào giòn ngọt và sả thơm ngát.
+            </p>
+          </div>
+        </div>
+        <!-- Món 4 -->
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1509440159596-0249088772ff?w=500"
+            alt="Bánh Croissant Bơ Pháp"
+            class="menu-img"
+          />
+          <div class="menu-info">
+            <h3>Bánh Croissant Bơ</h3>
+            <span class="price">35.000 VNĐ</span>
+            <p class="description">
+              Bánh sừng bò nướng giòn xốp thơm lừng vị bơ Pháp.
+            </p>
+          </div>
+        </div>
+        <!-- Món 5 -->
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1551024709-8f23befc6f87?w=500"
+            alt="Bánh Tiramisu truyền thống"
+            class="menu-img"
+          />
+          <div class="menu-info">
+            <h3>Tiramisu Cổ Điển</h3>
+            <span class="price">60.000 VNĐ</span>
+            <p class="description">
+              Bánh ngọt Ý mềm mịn thơm nồng vị cà phê và cacao.
+            </p>
+          </div>
+        </div>
+        <!-- Món 6 -->
+        <div class="menu-card">
+          <img
+            src="https://images.unsplash.com/photo-1544025162-d76694265947?w=500"
+            alt="Món Bít Tết Bò Mỹ sốt tiêu"
+            class="menu-img"
+          />
+          <div class="menu-info">
+            <h3>Bít Tết Bò Mỹ</h3>
+            <span class="price">185.000 VNĐ</span>
+            <p class="description">
+              Thịt bò Mỹ áp chảo dùng kèm sốt tiêu đen đậm đà.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Khối 4: Form Đặt Bàn -->
+    <section id="dat-ban" class="form-container">
+      <h2 class="section-title">Đặt Bàn Ngay</h2>
+      <form action="#" method="post" class="booking-form">
+        <!-- Họ và tên (input type="text") -->
+        <div class="form-group">
+          <label for="fullname">Họ và tên:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            placeholder="Nhập họ và tên"
+            required
+          />
+        </div>
+
+        <!-- Điện thoại (input type="tel") -->
+        <div class="form-group">
+          <label for="phone">Điện thoại:</label>
+          <input
+            type="tel"
+            id="phone"
+            name="phone"
+            placeholder="Nhập số điện thoại"
+            required
+          />
+        </div>
+
+        <!-- Ngày đến (input type="date") -->
+        <div class="form-group">
+          <label for="date">Ngày đến:</label>
+          <input type="date" id="date" name="date" required />
+        </div>
+
+        <!-- Giờ đến (input type="time") -->
+        <div class="form-group">
+          <label for="time">Giờ đến:</label>
+          <input type="time" id="time" name="time" required />
+        </div>
+
+        <!-- Số người (input type="number") -->
+        <div class="form-group">
+          <label for="guests">Số người:</label>
+          <input
+            type="number"
+            id="guests"
+            name="guests"
+            min="1"
+            max="50"
+            placeholder="Số lượng"
+            required
+          />
+        </div>
+
+        <!-- Khu vực ngồi (radio) -->
+        <div class="form-group">
+          <label>Khu vực ngồi:</label>
+          <div class="radio-group">
+            <label
+              ><input type="radio" name="area" value="indoor" checked /> Trong
+              nhà</label
+            >
+            <label
+              ><input type="radio" name="area" value="outdoor" /> Ngoài
+              trời</label
+            >
+            <label
+              ><input type="radio" name="area" value="private" /> Phòng
+              riêng</label
+            >
+          </div>
+        </div>
+
+        <!-- Chi nhánh (select - tối thiểu 4 lựa chọn) -->
+        <div class="form-group">
+          <label for="branch">Chi nhánh:</label>
+          <select id="branch" name="branch" required>
+            <option value="">-- Chọn chi nhánh --</option>
+            <option value="quan1">Chi nhánh 1: Quận 1, TP.HCM</option>
+            <option value="quan3">Chi nhánh 2: Quận 3, TP.HCM</option>
+            <option value="tayho">Chi nhánh 3: Tây Hồ, Hà Nội</option>
+            <option value="haichau">Chi nhánh 4: Hải Châu, Đà Nẵng</option>
+          </select>
+        </div>
+
+        <!-- Yêu cầu thêm (checkbox - tối thiểu 3 lựa chọn) -->
+        <div class="form-group">
+          <label>Yêu cầu thêm:</label>
+          <div class="checkbox-group">
+            <label
+              ><input type="checkbox" name="services[]" value="highchair" /> Ghế
+              trẻ em</label
+            >
+            <label
+              ><input type="checkbox" name="services[]" value="birthday" />
+              Trang trí sinh nhật</label
+            >
+            <label
+              ><input type="checkbox" name="services[]" value="window" /> Bàn
+              gần cửa sổ</label
+            >
+          </div>
+        </div>
+
+        <!-- Ghi chú (textarea) -->
+        <div class="form-group full-width">
+          <label for="note">Ghi chú:</label>
+          <textarea
+            id="note"
+            name="note"
+            rows="4"
+            placeholder="Nhập ghi chú hoặc yêu cầu đặc biệt..."
+          ></textarea>
+        </div>
+
+        <!-- Nút bấm (button - Đặt bàn và Hủy) -->
+        <div class="form-buttons full-width">
+          <button type="submit" class="btn-submit">Đặt bàn</button>
+          <button type="reset" class="btn-reset">Hủy</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Khối 5: Footer -->
+    <footer class="footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h3>Địa Chỉ Chi Nhánh</h3>
+          <p>CN 1: 123 Nguyễn Huệ, Quận 1, TP.HCM</p>
+          <p>CN 2: 45 Nam Kỳ Khởi Nghĩa, Quận 3, TP.HCM</p>
+          <p>CN 3: 88 Xuân Diệu, Tây Hồ, Hà Nội</p>
+          <p>CN 4: 12 Nguyễn Văn Linh, Hải Châu, Đà Nẵng</p>
+        </div>
+        <div class="footer-section">
+          <h3>Giờ Mở Cửa</h3>
+          <p>Thứ 2 - Thứ 6: 07:00 - 22:30</p>
+          <p>Thứ 7 - Chủ Nhật: 06:30 - 23:00</p>
+        </div>
+        <div class="footer-section">
+          <h3>Hotline Liên Hệ</h3>
+          <p><strong>Hotline:</strong> 1900 6868 - 0909 123 456</p>
+          <p><strong>Email:</strong> contact@coffeebistro.com</p>
+        </div>
+      </div>
+      <div class="copyright">
+        <p>&copy; 2026 The Coffee House & Bistro. Tất cả quyền được bảo lưu.</p>
+      </div>
+    </footer>
+
+    <!-- Script Dark/Light Mode -->
+    <script>
+      function toggleDarkMode() {
+        document.body.classList.toggle("dark-mode");
+      }
+    </script>
+  </body>
+</html>
